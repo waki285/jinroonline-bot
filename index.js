@@ -8,5 +8,6 @@ const { launch } = require("puppeteer");
   });
   
   const page = await browser.newPage();
+  page.goto("https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo");
 
-});
+})();
