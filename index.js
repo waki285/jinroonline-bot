@@ -6,4 +6,7 @@ const { launch } = require("puppeteer");
     headless: false,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
+  
+  const page = await browser.newPage();
+
 });
