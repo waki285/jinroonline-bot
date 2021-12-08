@@ -1,8 +1,8 @@
 const { Worker } = require("worker_threads");
-const { launch } = require("puppeteer");
+const puppeteer = require("puppeteer");
 
 (async () => {
-  const browser = await launch({
+  const browser = await puppeteer.launch({
     headless: false,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
